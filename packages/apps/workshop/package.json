@@ -64,7 +64,6 @@
     "@ovh-ux/ui-kit.collapsible": "*",
     "@ovh-ux/ui-kit.components": "*",
     "@ovh-ux/ui-kit.config": "*",
-    "@ovh-ux/ui-kit.core": "*",
     "@ovh-ux/ui-kit.criteria": "*",
     "@ovh-ux/ui-kit.datagrid": "*",
     "@ovh-ux/ui-kit.dropdown": "*",
