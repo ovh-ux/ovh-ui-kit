@@ -58,6 +58,18 @@ export const Stacked = forModule(moduleName).createElement(
   ),
 );
 
+export const Sizes = forModule(moduleName).createElement(
+  () => compileTemplate(
+    `
+    <oui-progress size="m">
+      <oui-progress-bar type="info" value="50"></oui-progress-bar>
+    </oui-progress>
+    <oui-progress size="l">
+      <oui-progress-bar type="info" value="50"></oui-progress-bar>
+    </oui-progress>`,
+  ),
+);
+
 export const WithThresholds = forModule(moduleName).createElement(
   () => compileTemplate(
     `
@@ -104,6 +116,29 @@ export const WithCustomLabel = forModule(moduleName).createElement(
 );
 
 WithCustomLabel.storyName = 'With custom label';
+
+export const WithoutLabels = forModule(moduleName).createElement(
+  () => compileTemplate(
+    `
+    <oui-progress no-labels>
+      <oui-progress-bar value="7.5"></oui-progress-bar>
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar>
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar>
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar>
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar>
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+      <oui-progress-bar value="7.5"></oui-progress-bar> 
+    </oui-progress>`,
+  ),
+);
+
+WithoutLabels.storyName = 'Without labels';
 
 export const Compact = forModule(moduleName).createElement(
   () => compileTemplate(

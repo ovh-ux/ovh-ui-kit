@@ -13,7 +13,9 @@ export default class {
   $onInit() {
     addDefaultParameter(this, 'type', 'info');
 
+    this.size = this.progressCtrl.size;
     this.compact = this.progressCtrl.compact;
+    this.noLabels = this.progressCtrl.noLabels;
     this.minValue = this.progressCtrl.minValue;
     this.maxValue = this.progressCtrl.maxValue;
   }
